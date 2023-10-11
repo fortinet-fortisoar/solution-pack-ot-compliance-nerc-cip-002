@@ -20,7 +20,7 @@
             "name": "Configuration",
             "description": null,
             "arguments": {
-                "sentTo": "['gankit@fortinet-us.com']"
+                "sentTo": "['noreply@example.com']"
             },
             "status": null,
             "top": "165",

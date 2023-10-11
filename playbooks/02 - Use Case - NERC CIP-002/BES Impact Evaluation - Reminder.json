@@ -20,7 +20,8 @@
             "name": "Configuration",
             "description": null,
             "arguments": {
-                "userDetails": "{{vars.request.currentUser | fromIRI}}"
+                "userDetails": "{{vars.request.currentUser | fromIRI}}",
+                "sentTo": "['noreply@example.com']"
             },
             "status": null,
             "top": "165",
@@ -159,7 +160,7 @@
                     "subject": "NERC CIP 002-5.1a - BES Cyber System Impact Evaluation",
                     "iri_list": "{{vars.reportIRIList}}",
                     "cc_recipients": "",
-                    "to_recipients": "gankit@fortinet-us.com",
+                    "to_recipients": "{{vars.sentTo}}",
                     "bcc_recipients": ""
                 },
                 "version": "2.5.0",
