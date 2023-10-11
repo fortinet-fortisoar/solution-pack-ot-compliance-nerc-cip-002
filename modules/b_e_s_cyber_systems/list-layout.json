@@ -1,0 +1,52 @@
+{
+    "@context": "\/api\/3\/contexts\/SystemViewTemplate",
+    "@type": "SystemViewTemplate",
+    "type": "rows",
+    "config": {
+        "rows": [
+            {
+                "columns": [
+                    {
+                        "widgets": [
+                            {
+                                "type": "grid",
+                                "config": {
+                                    "wid": "ca41e884-d413-4ed6-8f14-a71ab3070115",
+                                    "module": "b_e_s_cyber_systems",
+                                    "columns": [
+                                        "id",
+                                        "title",
+                                        "bESImpact",
+                                        "entityType",
+                                        "digitalControlSystems",
+                                        "lastAssessmentDate"
+                                    ],
+                                    "expandableCol": [],
+                                    "relationshipField": [],
+                                    "checkboxStatus": false,
+                                    "editableFields": false,
+                                    "actionButtons": [],
+                                    "query": {
+                                        "sort": [],
+                                        "limit": 30,
+                                        "logic": "AND",
+                                        "filters": []
+                                    }
+                                }
+                            }
+                        ],
+                        "style": "col-lg-12"
+                    }
+                ],
+                "wid": "473ce849-4dd9-4263-a8ae-b73e52ea1b74",
+                "_collapsed": false
+            }
+        ],
+        "wid": "6a5a9a45-40e9-47a3-8d94-3fe09c35dc8d",
+        "metadata": {
+            "customTemplateTitle": "BES Cyber Systems",
+            "originalTemplateTitle": "BES Cyber Systems"
+        }
+    },
+    "uuid": "modules-b_e_s_cyber_systems-list"
+}
