@@ -11,6 +11,12 @@
             "type": "solutionpack",
             "label": "SOAR Framework",
             "minVersion": "2.2.1"
+        },
+        {
+            "name": "socSimulator",
+            "type": "solutionpack",
+            "label": "SOC Simulator",
+            "minVersion": null
         }
     ],
     "prerequisite": null,
@@ -24,7 +30,7 @@
     "supportInfo": null,
     "iconLarge": null,
     "postInstallConfig": null,
-    "date": "2023-10-13T06:19:17+00:00",
+    "date": "2023-10-13T14:39:15+00:00",
     "contents": {
         "picklistNames": [
             {
@@ -92,6 +98,13 @@
             {
                 "apiName": "besImpactEvaluation",
                 "name": "BES Impact Evaluation"
+            }
+        ],
+        "recordSets": [
+            {
+                "name": "Scenario",
+                "apiName": "scenario",
+                "count": 1
             }
         ]
     }
