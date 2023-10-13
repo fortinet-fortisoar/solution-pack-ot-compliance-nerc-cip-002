@@ -1,0 +1,285 @@
+{
+    "@type": "Workflow",
+    "triggerLimit": null,
+    "name": "Assign BES Cyber System Category",
+    "aliasName": null,
+    "tag": null,
+    "description": "Tags assets with BES Cyber System Categories.",
+    "isActive": true,
+    "debug": false,
+    "singleRecordExecution": false,
+    "remoteExecutableFlag": false,
+    "parameters": [],
+    "synchronous": false,
+    "collection": "\/api\/3\/workflow_collections\/296150d0-f5dc-40b0-a491-337c691d8f8a",
+    "versions": [],
+    "triggerStep": "\/api\/3\/workflow_steps\/731181c0-fb21-4195-a8ae-b261ee90b383",
+    "steps": [
+        {
+            "@type": "WorkflowStep",
+            "name": "BES Cyber System Asset Categorization Input",
+            "description": null,
+            "arguments": {
+                "type": "InputBased",
+                "input": {
+                    "schema": {
+                        "title": "NERC CIP 002 - BES Cyber System Asset Categorization",
+                        "description": "Please classify the product category as per NERC CIP 002 - BES Cyber System Asset Categorization:",
+                        "inputVariables": [
+                            {
+                                "name": "assetType",
+                                "type": "picklists",
+                                "label": "Asset Type",
+                                "title": "Picklist",
+                                "usable": true,
+                                "tooltip": "",
+                                "dataType": "picklist",
+                                "formType": "picklist",
+                                "required": true,
+                                "_expanded": true,
+                                "mmdUpdate": true,
+                                "bulkAction": [],
+                                "collection": false,
+                                "dataSource": {
+                                    "model": "picklists",
+                                    "query": {
+                                        "sort": [
+                                            {
+                                                "field": "orderIndex",
+                                                "direction": "ASC"
+                                            }
+                                        ],
+                                        "logic": "AND",
+                                        "filters": [
+                                            {
+                                                "field": "listName__name",
+                                                "value": "BES Cyber Asset Category",
+                                                "operator": "eq"
+                                            }
+                                        ]
+                                    },
+                                    "displayConditions": {
+                                        "37af6294-36c3-494d-bc1a-d2131a19e4d9": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        },
+                                        "5f43696e-b2ad-4f03-8092-8fcdef2ef76d": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        },
+                                        "740d017c-7c92-4e42-ac53-7fda17122722": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        },
+                                        "807a51b8-ef06-4f0c-91be-ee99c6f649e9": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        },
+                                        "c04f4b7f-a150-463c-ad0d-f81eb4479e04": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        },
+                                        "c9093965-69b5-4bc4-90ba-d59e256a957e": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        },
+                                        "d50aff78-a2c1-4cf3-8f65-fb8b8238f9cc": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        },
+                                        "e8183959-fd21-4bdf-87ae-840c8c30ce9a": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        },
+                                        "f79c90bc-0c2d-4848-8138-0266cc13ffe6": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        },
+                                        "f9145b90-6cae-4a6a-b5d9-0e0607982829": {
+                                            "conditions": null,
+                                            "visibility": "visible"
+                                        }
+                                    }
+                                },
+                                "searchable": false,
+                                "templateUrl": "app\/components\/form\/fields\/typeahead.html",
+                                "defaultValue": null,
+                                "_previousName": "assetType",
+                                "inversedField": null,
+                                "playbookField": true,
+                                "displayTemplate": "{{ itemValue }}",
+                                "lengthConstraint": false,
+                                "ownsRelationship": false,
+                                "allowedEncryption": false,
+                                "allowedGridColumn": true,
+                                "jinjaExpressionView": true,
+                                "useRecordFieldDefault": false
+                            },
+                            {
+                                "name": "reason",
+                                "type": "string",
+                                "label": "Reason",
+                                "tooltip": "",
+                                "dataType": "text",
+                                "formType": "text",
+                                "required": true,
+                                "_expanded": false,
+                                "defaultValue": null,
+                                "_previousName": "rEa",
+                                "jinjaExpressionView": true,
+                                "useRecordFieldDefault": false
+                            }
+                        ]
+                    }
+                },
+                "record": "",
+                "agent_id": null,
+                "resources": "assets",
+                "is_approval": false,
+                "owner_detail": {
+                    "isAssigned": false
+                },
+                "isRecordLinked": false,
+                "step_variables": [],
+                "response_mapping": {
+                    "options": [
+                        {
+                            "option": "Tag",
+                            "primary": true,
+                            "step_iri": "\/api\/3\/workflow_steps\/818f73b5-985c-47f3-8d89-20e1a2305443"
+                        }
+                    ],
+                    "duplicateOption": false,
+                    "customSuccessMessage": "Awaiting Playbook resumed successfully."
+                },
+                "email_notification": {
+                    "enabled": false,
+                    "smtpParameters": []
+                },
+                "inline_channel_list": [],
+                "external_channel_list": [],
+                "unauthenticated_input": false
+            },
+            "status": null,
+            "top": "165",
+            "left": "125",
+            "stepType": "\/api\/3\/workflow_step_types\/fc04082a-d7dc-4299-96fb-6837b1baa0fe",
+            "group": null,
+            "uuid": "2e7c9d53-275f-40d5-95ca-c9acfab0f904"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Start",
+            "description": null,
+            "arguments": {
+                "route": "0e856c65-2e3c-48f1-afa1-c923c28c60b3",
+                "resources": [
+                    "assets"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                    "input": {
+                        "params": [],
+                        "records": "{{vars.input.records}}"
+                    }
+                },
+                "displayConditions": {
+                    "assets": {
+                        "sort": [],
+                        "limit": 30,
+                        "logic": "AND",
+                        "filters": []
+                    }
+                },
+                "executeButtonText": "Execute",
+                "noRecordExecution": false,
+                "showToasterMessage": {
+                    "visible": false,
+                    "messageVisible": true
+                },
+                "singleRecordExecution": true
+            },
+            "status": null,
+            "top": "30",
+            "left": "125",
+            "stepType": "\/api\/3\/workflow_step_types\/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+            "group": null,
+            "uuid": "731181c0-fb21-4195-a8ae-b261ee90b383"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Tag Asset with BES Cyber System Category",
+            "description": null,
+            "arguments": {
+                "message": {
+                    "tags": [],
+                    "type": "\/api\/3\/picklists\/ff599189-3eeb-4c86-acb0-a7915e85ac3b",
+                    "tenant": "",
+                    "thread": false,
+                    "content": "<p><span class=\"control-title font-size-15\">NERC CIP 002-5.1a<\/span><\/p>\n<p><span class=\"font-size-14\">Categorized asset with: <\/span>{{vars.steps.BES_Cyber_System_Asset_Categorization_Input.input.assetType.itemValue}}<\/p>\n<p><span class=\"font-size-14\">Reason: <\/span>{{vars.steps.BES_Cyber_System_Asset_Categorization_Input.input.reason}}<\/p>",
+                    "records": "{{vars.record | json_query('[*][\"@id\"][]')}}"
+                },
+                "for_each": {
+                    "item": "{{vars.input.records}}",
+                    "__bulk": true,
+                    "parallel": false,
+                    "condition": "",
+                    "batch_size": 100
+                },
+                "resource": {
+                    "bESCyberAssetCategory": "{{vars.steps.BES_Cyber_System_Asset_Categorization_Input.input.assetType}}"
+                },
+                "operation": "Append",
+                "collection": "{{vars.item['@id']}}",
+                "__recommend": [],
+                "collectionType": "\/api\/3\/assets",
+                "fieldOperation": {
+                    "protocol": "Append",
+                    "bESCyberSystemCategory": "Overwrite",
+                    "nERCCIPAssetCategorization": "Append"
+                },
+                "step_variables": []
+            },
+            "status": null,
+            "top": "300",
+            "left": "125",
+            "stepType": "\/api\/3\/workflow_step_types\/b593663d-7d13-40ce-a3a3-96dece928722",
+            "group": null,
+            "uuid": "818f73b5-985c-47f3-8d89-20e1a2305443"
+        }
+    ],
+    "routes": [
+        {
+            "@type": "WorkflowRoute",
+            "name": "BES Cyber Asset BCA tagging -> Tag Asset with NERC CIP Categorization",
+            "targetStep": "\/api\/3\/workflow_steps\/818f73b5-985c-47f3-8d89-20e1a2305443",
+            "sourceStep": "\/api\/3\/workflow_steps\/2e7c9d53-275f-40d5-95ca-c9acfab0f904",
+            "label": "Tag",
+            "isExecuted": false,
+            "group": null,
+            "uuid": "86541474-0a63-498b-90b4-01f7a67d0daf"
+        },
+        {
+            "@type": "WorkflowRoute",
+            "name": "Start -> BES Cyber Asset BCA tagging",
+            "targetStep": "\/api\/3\/workflow_steps\/2e7c9d53-275f-40d5-95ca-c9acfab0f904",
+            "sourceStep": "\/api\/3\/workflow_steps\/731181c0-fb21-4195-a8ae-b261ee90b383",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "afec4f47-36bf-4f7d-8649-f8f94dd83da2"
+        }
+    ],
+    "groups": [],
+    "priority": "\/api\/3\/picklists\/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+    "uuid": "69b19f41-c8e9-480f-a0b1-f41e07a8b2bb",
+    "owners": [],
+    "isPrivate": false,
+    "deletedAt": null,
+    "recordTags": [
+        "Assets",
+        "BES Cyber Asset",
+        "ManualTrigger",
+        "NERC CIP-002"
+    ]
+}

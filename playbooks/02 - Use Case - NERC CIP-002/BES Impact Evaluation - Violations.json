@@ -1,0 +1,237 @@
+{
+    "@type": "Workflow",
+    "triggerLimit": null,
+    "name": "BES Impact Evaluation - Violations",
+    "aliasName": null,
+    "tag": "#CyOPs-Utilities",
+    "description": "Generates Non-Evaluated BES Cyber System Report and report its to delegate.",
+    "isActive": true,
+    "debug": false,
+    "singleRecordExecution": false,
+    "remoteExecutableFlag": false,
+    "parameters": [],
+    "synchronous": false,
+    "collection": "\/api\/3\/workflow_collections\/296150d0-f5dc-40b0-a491-337c691d8f8a",
+    "versions": [],
+    "triggerStep": "\/api\/3\/workflow_steps\/e158be79-4a70-4536-9893-fee31050d3dd",
+    "steps": [
+        {
+            "@type": "WorkflowStep",
+            "name": "Configuration",
+            "description": null,
+            "arguments": {
+                "sendTo": "[]"
+            },
+            "status": null,
+            "top": "165",
+            "left": "125",
+            "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+            "group": null,
+            "uuid": "9fefd435-a622-4b6b-92df-e497e50fe30e"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Generate Report By Scheduler",
+            "description": null,
+            "arguments": {
+                "name": "Schedule Report",
+                "params": {
+                    "scheduler": "{{vars.__schedule}}"
+                },
+                "version": "1.0.3",
+                "connector": "cyops-schedule-report",
+                "operation": "schedule_report",
+                "operationTitle": "Generate Report By Scheduler",
+                "step_variables": []
+            },
+            "status": null,
+            "top": "300",
+            "left": "125",
+            "stepType": "\/api\/3\/workflow_step_types\/0bfed618-0316-11e7-93ae-92361f002671",
+            "group": null,
+            "uuid": "fede6914-3961-44d8-b9a5-f470e205a559"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Save Response",
+            "description": null,
+            "arguments": {
+                "response": "{{ vars.result.data }}",
+                "inputParameters": "{{vars.__schedule.inputParameters}}"
+            },
+            "status": null,
+            "top": "435",
+            "left": "125",
+            "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+            "group": null,
+            "uuid": "6c5e140f-e560-4732-a9df-3cc8979fa531"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Send Email",
+            "description": null,
+            "arguments": {
+                "config": "88c3d39c-2fa9-4731-b00d-29815008f17c",
+                "params": {
+                    "cc": "{{vars.result.response.createUser.email}}",
+                    "to": "{{vars.__schedule.inputParameters.query.email}}",
+                    "bcc": "",
+                    "body": "<p>Dear Team, <br \/><br \/>Hope this message finds you well. In accordance with the NERC CIP 002-5.1a guidelines, it is stipulated that the categorization of BES Cyber Systems' impact must be done. As of now, here is the list of BES Cyber Systems that have not undergone categorization. Kindly request your prompt attention to categorize the impact of these systems.<br \/><br \/>Please refer to the attached document, which contains the inventory of BES Cyber Systems requiring categorization.<\/p>\n<p>Thank you for your immediate attention to this matter.<\/p>\n<p>Best regards<\/p>",
+                    "from": "",
+                    "content": "This is an automatically generated email. Please do not reply to it.",
+                    "subject": "FortiSOAR: {{vars.__schedule.name}}",
+                    "iri_list": "['{{vars.response.file['@id']}}']",
+                    "file_name": "{{vars.response.file.name}}",
+                    "file_path": "",
+                    "content_type": "text\/plain",
+                    "cc_recipients": "",
+                    "to_recipients": "{{vars.sendTo}}",
+                    "bcc_recipients": ""
+                },
+                "version": "2.5.0",
+                "connector": "smtp",
+                "operation": "send_email",
+                "operationTitle": "Send Email",
+                "step_variables": []
+            },
+            "status": null,
+            "top": "570",
+            "left": "125",
+            "stepType": "\/api\/3\/workflow_step_types\/4c0019b2-055c-44d0-968c-678a0c2d762e",
+            "group": null,
+            "uuid": "f2269020-deed-4cca-bac6-389701100d5d"
+        },
+        {
+            "@type": "WorkflowStep",
+            "name": "Start",
+            "description": null,
+            "arguments": {
+                "step_variables": {
+                    "input": {
+                        "params": []
+                    }
+                }
+            },
+            "status": null,
+            "top": "30",
+            "left": "125",
+            "stepType": "\/api\/3\/workflow_step_types\/b348f017-9a94-471f-87f8-ce88b6a7ad62",
+            "group": null,
+            "uuid": "e158be79-4a70-4536-9893-fee31050d3dd"
+        }
+    ],
+    "routes": [
+        {
+            "@type": "WorkflowRoute",
+            "name": "Configuration -> Generate Report By Scheduler",
+            "targetStep": "\/api\/3\/workflow_steps\/fede6914-3961-44d8-b9a5-f470e205a559",
+            "sourceStep": "\/api\/3\/workflow_steps\/9fefd435-a622-4b6b-92df-e497e50fe30e",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "739cdeed-9f85-4ac2-8e89-00c8f54d91f0"
+        },
+        {
+            "@type": "WorkflowRoute",
+            "name": "Generate Report By Scheduler -> Save Response",
+            "targetStep": "\/api\/3\/workflow_steps\/6c5e140f-e560-4732-a9df-3cc8979fa531",
+            "sourceStep": "\/api\/3\/workflow_steps\/fede6914-3961-44d8-b9a5-f470e205a559",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "9821bda5-9bc9-4625-b09b-77388d7123da"
+        },
+        {
+            "@type": "WorkflowRoute",
+            "name": "Save Response -> Send Email",
+            "targetStep": "\/api\/3\/workflow_steps\/f2269020-deed-4cca-bac6-389701100d5d",
+            "sourceStep": "\/api\/3\/workflow_steps\/6c5e140f-e560-4732-a9df-3cc8979fa531",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "f5a1681f-11ec-468b-929d-007d852ee5b5"
+        },
+        {
+            "@type": "WorkflowRoute",
+            "name": "Start -> Configuration",
+            "targetStep": "\/api\/3\/workflow_steps\/9fefd435-a622-4b6b-92df-e497e50fe30e",
+            "sourceStep": "\/api\/3\/workflow_steps\/e158be79-4a70-4536-9893-fee31050d3dd",
+            "label": null,
+            "isExecuted": false,
+            "group": null,
+            "uuid": "4e361821-3f70-45b5-ab35-9e21a0162bc4"
+        }
+    ],
+    "groups": [],
+    "priority": null,
+    "uuid": "bbe0c2b8-d605-4880-bb98-5a0511cfc70d",
+    "owners": [],
+    "isPrivate": false,
+    "deletedAt": null,
+    "recordTags": [
+        "SystemWaitForCompletion",
+        "Referenced",
+        "Report",
+        "BES Cyber System",
+        "BES Impact",
+        "NERC CIP-002"
+    ],
+    "schedules": [
+        {
+            "id": "gAAAAABlKOFk4u3dVUHlWLYsdcUs-iL2yAR93IDc1mVnDrqOqSptFAbgprkFs-vJ9SZkonDPKXrICoKXkwlPvl95zNAj6vTrOQ==",
+            "crontab": {
+                "id": 17,
+                "minute": "1",
+                "hour": "0",
+                "day_of_week": "1",
+                "day_of_month": "*",
+                "month_of_year": "*",
+                "timezone": "UTC"
+            },
+            "interval": null,
+            "name": "NERC CIP BES Impact Evaluation - Violations",
+            "task": "workflow.tasks.periodic_task",
+            "args": "[]",
+            "kwargs": {
+                "inputParameters": {
+                    "query": {
+                        "qparam": []
+                    }
+                },
+                "timezone": "UTC",
+                "utcOffset": "UTC",
+                "referenceid": "d0956be3-2907-4850-a712-dfa7c58deb15",
+                "wf_iri": "\/api\/3\/workflows\/bbe0c2b8-d605-4880-bb98-5a0511cfc70d",
+                "exit_if_running": false,
+                "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+                "name": "BES Cyber System - Asset Information and Implementation Identification",
+                "description": "BES Cyber System - Asset Information and Implementation Identification",
+                "auth": {
+                    "auth_method": "CS HMAC"
+                },
+                "schedule_entry_name": "NERC CIP BES Impact Evaluation - Violations",
+                "schedule_id": "e967c074-0d07-4e34-99d4-48d38db96213",
+                "expired": false,
+                "start_time": null,
+                "expires": null,
+                "priority": null
+            },
+            "queue": null,
+            "exchange": null,
+            "routing_key": null,
+            "headers": "{}",
+            "priority": 3,
+            "expires": null,
+            "expire_seconds": null,
+            "one_off": false,
+            "start_time": null,
+            "enabled": false,
+            "last_run_at": null,
+            "total_run_count": 2,
+            "date_changed": "2023-10-09T12:19:12.510465Z",
+            "description": "BES Cyber System - Asset Information and Implementation Identification",
+            "solar": null,
+            "clocked": null
+        }
+    ]
+}

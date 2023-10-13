@@ -1,0 +1,11 @@
+{
+    "@context": "\/api\/3\/contexts\/WorkflowCollection",
+    "@type": "WorkflowCollection",
+    "name": "02 - Use Case - NERC CIP-002",
+    "description": null,
+    "visible": true,
+    "image": null,
+    "uuid": "296150d0-f5dc-40b0-a491-337c691d8f8a",
+    "deletedAt": null,
+    "recordTags": []
+}

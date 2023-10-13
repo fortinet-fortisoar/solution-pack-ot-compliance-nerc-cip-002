@@ -1,0 +1,90 @@
+{
+    "@context": "\/api\/3\/contexts\/PicklistName",
+    "@id": "\/api\/3\/picklist_names\/8a6ab2c8-962b-4c86-89d8-632faf04a682",
+    "@type": "PicklistName",
+    "name": "BES Control Systems",
+    "system": false,
+    "picklists": [
+        {
+            "@id": "\/api\/3\/picklists\/a6be8785-a60d-40d0-9509-ed08c1d04f20",
+            "@type": "Picklist",
+            "itemValue": "Control Center \/ Backup Control Center",
+            "orderIndex": 0,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/8a6ab2c8-962b-4c86-89d8-632faf04a682",
+            "uuid": "a6be8785-a60d-40d0-9509-ed08c1d04f20"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/216759fb-c7ed-4ccb-9275-a35b39c3f154",
+            "@type": "Picklist",
+            "itemValue": "Transmission Station \/ Substation",
+            "orderIndex": 1,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/8a6ab2c8-962b-4c86-89d8-632faf04a682",
+            "uuid": "216759fb-c7ed-4ccb-9275-a35b39c3f154"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/9c78e82c-f9fe-478f-88f5-dc5c72640ab5",
+            "@type": "Picklist",
+            "itemValue": "Generation Resource",
+            "orderIndex": 2,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/8a6ab2c8-962b-4c86-89d8-632faf04a682",
+            "uuid": "9c78e82c-f9fe-478f-88f5-dc5c72640ab5"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/078f9c0b-90a2-4c38-affe-173060766f22",
+            "@type": "Picklist",
+            "itemValue": "Blackstart Resource",
+            "orderIndex": 3,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/8a6ab2c8-962b-4c86-89d8-632faf04a682",
+            "uuid": "078f9c0b-90a2-4c38-affe-173060766f22"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/db2c57e5-91b2-41fd-830a-79149ee4f272",
+            "@type": "Picklist",
+            "itemValue": "Cranking Path",
+            "orderIndex": 4,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/8a6ab2c8-962b-4c86-89d8-632faf04a682",
+            "uuid": "db2c57e5-91b2-41fd-830a-79149ee4f272"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/cdeeb8bb-d7f1-4881-9588-a8274ff68096",
+            "@type": "Picklist",
+            "itemValue": "SPS \/ RAS",
+            "orderIndex": 5,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/8a6ab2c8-962b-4c86-89d8-632faf04a682",
+            "uuid": "cdeeb8bb-d7f1-4881-9588-a8274ff68096"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/8534e359-2333-4695-949c-9e08dcdc0468",
+            "@type": "Picklist",
+            "itemValue": "UVLS \/ UFLS",
+            "orderIndex": 6,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/8a6ab2c8-962b-4c86-89d8-632faf04a682",
+            "uuid": "8534e359-2333-4695-949c-9e08dcdc0468"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/5fffb278-6aed-42c0-ab95-6456d6eceaf8",
+            "@type": "Picklist",
+            "itemValue": "Reactive Resource",
+            "orderIndex": 7,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/8a6ab2c8-962b-4c86-89d8-632faf04a682",
+            "uuid": "5fffb278-6aed-42c0-ab95-6456d6eceaf8"
+        }
+    ],
+    "uuid": "8a6ab2c8-962b-4c86-89d8-632faf04a682"
+}

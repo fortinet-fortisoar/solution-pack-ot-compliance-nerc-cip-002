@@ -1,0 +1,32 @@
+{
+    "@context": "\/api\/3\/contexts\/SystemViewTemplate",
+    "@type": "SystemViewTemplate",
+    "type": "app",
+    "config": {
+        "navigation": [
+            {
+                "editMode": false,
+                "icon": "icon icon-complete-later",
+                "items": [
+                    {
+                        "editMode": false,
+                        "icon": "icon icon-post-delete-trigger",
+                        "require": {
+                            "module": "b_e_s_cyber_systems",
+                            "action": "read"
+                        },
+                        "state": {
+                            "name": "main.modules.list",
+                            "parameters": {
+                                "module": "b_e_s_cyber_systems"
+                            }
+                        },
+                        "title": "BES Cyber Systems"
+                    }
+                ],
+                "title": "OT Compliance"
+            }
+        ]
+    },
+    "uuid": "navigation"
+}

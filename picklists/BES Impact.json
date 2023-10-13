@@ -1,0 +1,40 @@
+{
+    "@context": "\/api\/3\/contexts\/PicklistName",
+    "@id": "\/api\/3\/picklist_names\/dcb034d5-0975-4dbc-8839-af991d5d1ef8",
+    "@type": "PicklistName",
+    "name": "BES Impact",
+    "system": false,
+    "picklists": [
+        {
+            "@id": "\/api\/3\/picklists\/2fb2314a-3544-44fa-94ac-217c76bedf1d",
+            "@type": "Picklist",
+            "itemValue": "High",
+            "orderIndex": 0,
+            "color": "#e31b1d",
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/dcb034d5-0975-4dbc-8839-af991d5d1ef8",
+            "uuid": "2fb2314a-3544-44fa-94ac-217c76bedf1d"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/0df2edaa-cf44-4136-976e-b3b4e592f544",
+            "@type": "Picklist",
+            "itemValue": "Medium",
+            "orderIndex": 1,
+            "color": "#D2AC1A",
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/dcb034d5-0975-4dbc-8839-af991d5d1ef8",
+            "uuid": "0df2edaa-cf44-4136-976e-b3b4e592f544"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/081f7b6b-90de-4976-af36-57c3487730e5",
+            "@type": "Picklist",
+            "itemValue": "Low",
+            "orderIndex": 2,
+            "color": "#28B35C",
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/dcb034d5-0975-4dbc-8839-af991d5d1ef8",
+            "uuid": "081f7b6b-90de-4976-af36-57c3487730e5"
+        }
+    ],
+    "uuid": "dcb034d5-0975-4dbc-8839-af991d5d1ef8"
+}
