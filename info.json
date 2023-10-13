@@ -1,7 +1,7 @@
 {
     "name": "oT-Compliance-NERCCIP-002",
     "version": "1.0.0",
-    "fsrMinCompatibility": "7.4.0",
+    "fsrMinCompatibility": "7.4.1",
     "type": "solutionpack",
     "local": true,
     "label": "OT - Compliance - NERC CIP-002",
@@ -24,7 +24,7 @@
     "supportInfo": null,
     "iconLarge": null,
     "postInstallConfig": null,
-    "date": "2023-10-11T09:47:23+00:00",
+    "date": "2023-10-13T06:19:17+00:00",
     "contents": {
         "picklistNames": [
             {

@@ -19,7 +19,8 @@
                                         "bESImpact",
                                         "entityType",
                                         "digitalControlSystems",
-                                        "lastAssessmentDate"
+                                        "lastAssessmentDate",
+                                        "externalRoutableConnectivity"
                                     ],
                                     "expandableCol": [],
                                     "relationshipField": [],

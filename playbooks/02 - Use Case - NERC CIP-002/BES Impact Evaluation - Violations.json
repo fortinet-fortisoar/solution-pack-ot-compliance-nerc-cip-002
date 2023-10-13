@@ -20,7 +20,7 @@
             "name": "Configuration",
             "description": null,
             "arguments": {
-                "sentTo": "['noreply@example.com']"
+                "sendTo": "[]"
             },
             "status": null,
             "top": "165",
@@ -85,7 +85,7 @@
                     "file_path": "",
                     "content_type": "text\/plain",
                     "cc_recipients": "",
-                    "to_recipients": "{{vars.sentTo}}",
+                    "to_recipients": "{{vars.sendTo}}",
                     "bcc_recipients": ""
                 },
                 "version": "2.5.0",
@@ -178,7 +178,7 @@
     ],
     "schedules": [
         {
-            "id": "gAAAAABlJm8qfN7hvRJUxABBFkJGiEqY_V2W-d0UD0qZWK9pe3d1deKq8mZ4Yo8a7FqNkZOoOlcd94PfOuOkM9IaBlyjA_IxFQ==",
+            "id": "gAAAAABlKOFk4u3dVUHlWLYsdcUs-iL2yAR93IDc1mVnDrqOqSptFAbgprkFs-vJ9SZkonDPKXrICoKXkwlPvl95zNAj6vTrOQ==",
             "crontab": {
                 "id": 17,
                 "minute": "1",
@@ -225,7 +225,7 @@
             "expire_seconds": null,
             "one_off": false,
             "start_time": null,
-            "enabled": true,
+            "enabled": false,
             "last_run_at": null,
             "total_run_count": 2,
             "date_changed": "2023-10-09T12:19:12.510465Z",

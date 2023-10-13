@@ -24,7 +24,7 @@
             "orderIndex": 1,
             "formType": "text",
             "dataSource": null,
-            "searchable": false,
+            "searchable": true,
             "peerReplicable": true,
             "system": false,
             "encrypted": false,
@@ -69,7 +69,7 @@
             "orderIndex": 2,
             "formType": "richtext",
             "dataSource": null,
-            "searchable": true,
+            "searchable": false,
             "peerReplicable": true,
             "system": false,
             "encrypted": false,
@@ -191,7 +191,7 @@
             "writeable": true,
             "identifier": null,
             "unique": false,
-            "recommend": false,
+            "recommend": true,
             "skipSerialization": false,
             "displayName": "{{ entityType }}",
             "descriptions": {
@@ -262,7 +262,7 @@
             "peerReplicable": true,
             "system": false,
             "encrypted": false,
-            "gridColumn": false,
+            "gridColumn": true,
             "collection": true,
             "inversedField": null,
             "ownsRelationship": false,
@@ -283,7 +283,7 @@
             "writeable": true,
             "identifier": null,
             "unique": false,
-            "recommend": false,
+            "recommend": true,
             "skipSerialization": false,
             "displayName": "{{ digitalControlSystems }}",
             "descriptions": {
@@ -379,7 +379,7 @@
             "writeable": true,
             "identifier": null,
             "unique": false,
-            "recommend": false,
+            "recommend": true,
             "skipSerialization": false,
             "displayName": "{{ bESImpact }}",
             "descriptions": {
@@ -430,12 +430,36 @@
             "peerReplicable": true,
             "system": false,
             "encrypted": false,
-            "gridColumn": false,
+            "gridColumn": true,
             "collection": false,
             "inversedField": null,
             "ownsRelationship": false,
             "validation": {
-                "required": false,
+                "required": [
+                    {
+                        "sort": [],
+                        "limit": 30,
+                        "logic": "AND",
+                        "filters": [
+                            {
+                                "field": "bESImpact",
+                                "value": [
+                                    "2fb2314a-3544-44fa-94ac-217c76bedf1d",
+                                    "0df2edaa-cf44-4136-976e-b3b4e592f544"
+                                ],
+                                "display": "",
+                                "operator": "in",
+                                "type": "object",
+                                "OPERATOR_KEY": "$",
+                                "displayTemplate": "",
+                                "module": "bESImpact",
+                                "template": "multiselectpicklist",
+                                "previousOperator": "in",
+                                "previousTemplate": "multiselectpicklist"
+                            }
+                        ]
+                    }
+                ],
                 "minlength": 0,
                 "maxlength": 10485761,
                 "_enableRange": false
@@ -495,7 +519,7 @@
             "orderIndex": 7,
             "formType": "richtext",
             "dataSource": null,
-            "searchable": true,
+            "searchable": false,
             "peerReplicable": true,
             "system": false,
             "encrypted": false,
@@ -549,58 +573,17 @@
         },
         {
             "@type": "AttributeMetadata",
-            "type": "comments",
-            "name": "comments",
-            "length": null,
-            "orderIndex": 8,
-            "formType": "manyToMany",
-            "dataSource": {
-                "model": "comments"
-            },
-            "searchable": false,
-            "peerReplicable": true,
-            "system": false,
-            "encrypted": false,
-            "gridColumn": false,
-            "collection": true,
-            "inversedField": "bESCyberSystems",
-            "ownsRelationship": true,
-            "validation": {
-                "required": false,
-                "minlength": 0,
-                "maxlength": 10485761
-            },
-            "bulkAction": [],
-            "dataSourceFilters": null,
-            "defaultValue": null,
-            "tooltip": null,
-            "visibility": true,
-            "htmlEscape": false,
-            "orphanRemoval": null,
-            "readable": true,
-            "writeable": true,
-            "identifier": null,
-            "unique": false,
-            "recommend": false,
-            "skipSerialization": false,
-            "displayName": "{{ comments }}",
-            "descriptions": {
-                "singular": "Comments"
-            }
-        },
-        {
-            "@type": "AttributeMetadata",
             "type": "integer",
             "name": "lastAssessmentDate",
             "length": null,
-            "orderIndex": 9,
+            "orderIndex": 8,
             "formType": "datetime",
             "dataSource": null,
             "searchable": true,
             "peerReplicable": true,
             "system": false,
             "encrypted": false,
-            "gridColumn": false,
+            "gridColumn": true,
             "collection": false,
             "inversedField": null,
             "ownsRelationship": false,
@@ -652,7 +635,7 @@
             "type": "assets",
             "name": "assets",
             "length": null,
-            "orderIndex": 10,
+            "orderIndex": 9,
             "formType": "manyToMany",
             "dataSource": {
                 "model": "assets"
@@ -668,7 +651,8 @@
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761
+                "maxlength": 10485761,
+                "_enableRange": false
             },
             "bulkAction": [],
             "dataSourceFilters": null,
@@ -690,10 +674,136 @@
         },
         {
             "@type": "AttributeMetadata",
+            "type": "alerts",
+            "name": "alerts",
+            "length": null,
+            "orderIndex": 10,
+            "formType": "manyToMany",
+            "dataSource": {
+                "model": "alerts"
+            },
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": true,
+            "inversedField": "bESCyberSystems",
+            "ownsRelationship": true,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761,
+                "_enableRange": false
+            },
+            "bulkAction": [],
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "displayName": "{{ alerts }}",
+            "descriptions": {
+                "singular": "Alerts"
+            }
+        },
+        {
+            "@type": "AttributeMetadata",
+            "type": "incidents",
+            "name": "incidents",
+            "length": null,
+            "orderIndex": 11,
+            "formType": "manyToMany",
+            "dataSource": {
+                "model": "incidents"
+            },
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": true,
+            "inversedField": "bESCyberSystems",
+            "ownsRelationship": true,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761,
+                "_enableRange": false
+            },
+            "bulkAction": [],
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "displayName": "{{ incidents }}",
+            "descriptions": {
+                "singular": "Incidents"
+            }
+        },
+        {
+            "@type": "AttributeMetadata",
+            "type": "comments",
+            "name": "comments",
+            "length": null,
+            "orderIndex": 12,
+            "formType": "manyToMany",
+            "dataSource": {
+                "model": "comments"
+            },
+            "searchable": false,
+            "peerReplicable": true,
+            "system": false,
+            "encrypted": false,
+            "gridColumn": false,
+            "collection": true,
+            "inversedField": "bESCyberSystems",
+            "ownsRelationship": true,
+            "validation": {
+                "required": false,
+                "minlength": 0,
+                "maxlength": 10485761,
+                "_enableRange": false
+            },
+            "bulkAction": [],
+            "dataSourceFilters": null,
+            "defaultValue": null,
+            "tooltip": null,
+            "visibility": true,
+            "htmlEscape": false,
+            "orphanRemoval": null,
+            "readable": true,
+            "writeable": true,
+            "identifier": null,
+            "unique": false,
+            "recommend": false,
+            "skipSerialization": false,
+            "displayName": "{{ comments }}",
+            "descriptions": {
+                "singular": "Comments"
+            }
+        },
+        {
+            "@type": "AttributeMetadata",
             "type": "tasks",
             "name": "task",
             "length": null,
-            "orderIndex": 11,
+            "orderIndex": 13,
             "formType": "manyToMany",
             "dataSource": {
                 "model": "tasks"
@@ -709,7 +819,8 @@
             "validation": {
                 "required": false,
                 "minlength": 0,
-                "maxlength": 10485761
+                "maxlength": 10485761,
+                "_enableRange": false
             },
             "bulkAction": [],
             "dataSourceFilters": null,

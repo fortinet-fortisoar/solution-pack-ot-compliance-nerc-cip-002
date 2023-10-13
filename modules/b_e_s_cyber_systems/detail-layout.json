@@ -538,6 +538,19 @@
                                             "visible": true
                                         },
                                         {
+                                            "title": "Playbooks",
+                                            "active": 0,
+                                            "widget": {
+                                                "type": "executedPlaybooks",
+                                                "config": {
+                                                    "wid": "030426e0-1acd-4e7b-b181-11638b5a225d"
+                                                }
+                                            },
+                                            "icon": "icon icon-playbooks",
+                                            "show": false,
+                                            "visible": true
+                                        },
+                                        {
                                             "title": "Audit Log",
                                             "active": 0,
                                             "widget": {

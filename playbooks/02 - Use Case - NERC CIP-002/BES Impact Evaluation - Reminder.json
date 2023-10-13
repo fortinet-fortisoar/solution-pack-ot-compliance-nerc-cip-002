@@ -21,7 +21,7 @@
             "description": null,
             "arguments": {
                 "userDetails": "{{vars.request.currentUser | fromIRI}}",
-                "sentTo": "['noreply@example.com']"
+                "sendTo": "[]"
             },
             "status": null,
             "top": "165",
@@ -160,7 +160,7 @@
                     "subject": "NERC CIP 002-5.1a - BES Cyber System Impact Evaluation",
                     "iri_list": "{{vars.reportIRIList}}",
                     "cc_recipients": "",
-                    "to_recipients": "{{vars.sentTo}}",
+                    "to_recipients": "{{vars.sendTo}}",
                     "bcc_recipients": ""
                 },
                 "version": "2.5.0",
@@ -272,7 +272,7 @@
     ],
     "schedules": [
         {
-            "id": "gAAAAABlJm8qsazFmIdyyFJ9lCLu4AkeawEbKZ8b3zGZBTLEBQgy9tUGGCsfh-XzMjsulVhIRAQA_L5DimksGEeRnnYhRbMkJw==",
+            "id": "gAAAAABlKOFk4GLaQKqbjon52aoZVfUcnhQLBIhgb7ADe1GxMnUvgwT7XBxm9ZDt4Jf5HnoBvhLqRiokhZfBTu92I4juX5vLKA==",
             "crontab": {
                 "id": 17,
                 "minute": "1",
@@ -324,7 +324,7 @@
             "expire_seconds": null,
             "one_off": false,
             "start_time": null,
-            "enabled": true,
+            "enabled": false,
             "last_run_at": null,
             "total_run_count": 0,
             "date_changed": "2023-10-09T10:01:36.132975Z",
