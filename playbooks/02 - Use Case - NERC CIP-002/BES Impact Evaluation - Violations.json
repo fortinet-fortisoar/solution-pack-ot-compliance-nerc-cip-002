@@ -189,7 +189,7 @@
                 "timezone": "UTC"
             },
             "interval": null,
-            "name": "NERC CIP BES Impact Evaluation - Violations",
+            "name": "NERC CIP 002-5.1a: BES Impact Evaluation - Violations",
             "task": "workflow.tasks.periodic_task",
             "args": "[]",
             "kwargs": {
@@ -204,12 +204,12 @@
                 "wf_iri": "\/api\/3\/workflows\/bbe0c2b8-d605-4880-bb98-5a0511cfc70d",
                 "exit_if_running": false,
                 "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
-                "name": "BES Cyber System - Asset Information and Implementation Identification",
-                "description": "BES Cyber System - Asset Information and Implementation Identification",
+                "name": "NERC CIP 002-5.1a: BES Impact Evaluation - Violations",
+                "description": "NERC CIP 002-5.1a: BES Impact Evaluation - Violations",
                 "auth": {
                     "auth_method": "CS HMAC"
                 },
-                "schedule_entry_name": "NERC CIP BES Impact Evaluation - Violations",
+                "schedule_entry_name": "NERC CIP 002-5.1a: BES Impact Evaluation - Violations",
                 "schedule_id": "e967c074-0d07-4e34-99d4-48d38db96213",
                 "expired": false,
                 "start_time": null,
@@ -229,7 +229,7 @@
             "last_run_at": null,
             "total_run_count": 2,
             "date_changed": "2023-10-09T12:19:12.510465Z",
-            "description": "BES Cyber System - Asset Information and Implementation Identification",
+            "description": "NERC CIP 002-5.1a: BES Impact Evaluation - Violations",
             "solar": null,
             "clocked": null
         }

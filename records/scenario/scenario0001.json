@@ -1,0 +1,33 @@
+[
+    {
+        "@type": "Scenario",
+        "configuration": null,
+        "title": "NERC CIP-002 BES Cyber Systems Sample Record",
+        "description": "In this scenario, three Bulk Electric System (BES) Cyber System records have been created, capturing essential information such as the Entity type and the associated Digital Control System. \n\nThese records enable users to correlate assets within the electric grid infrastructure. Additionally, a user-friendly interface includes an \"Evaluate Impact\" button, empowering users to trigger the calculation of BES Impact.\n\n\n\n",
+        "steps": {
+            "Steps": [
+                {
+                    "name": "Scenario - Create BES Cyber System Record",
+                    "type": "executePlaybook",
+                    "playbookIRI": "\/api\/3\/workflows\/828b894d-6269-4c05-986a-db0e5468036d",
+                    "preCreateMessage": "Creates samples record of BES Cyber Systems to evaluate Impact.",
+                    "postCreateMessage": "",
+                    "waitTimeforNextStep": "0"
+                }
+            ]
+        },
+        "createdAlertsID": null,
+        "uuid": "205b5e5e-f5d2-4342-b252-9a6639ba3d8e",
+        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+        "createDate": 1696850888.929035,
+        "modifyUser": "\/api\/3\/appliances\/57545210-2adc-472b-a24f-2df6ee8dfe63",
+        "modifyDate": 1697177895.231946,
+        "id": 13,
+        "recordTags": [
+            "BES Cyber System",
+            "BES Impact",
+            "NERC CIP-002",
+            "Scenario"
+        ]
+    }
+]
