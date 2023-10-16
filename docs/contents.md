@@ -48,6 +48,12 @@ The **OT - Compliance - NERC CIP-002** solution pack contains the following reso
 | NERC CIP 002-5.1a: BES Impact Evaluation Reminder  | Generate a report for BES Cyber systems that have undergone assessment of BES Impact for over a year. |
 | NERC CIP 002-5.1a: BES Impact Non-Evaluated System | Generate a report for BES Cyber systems that haven't undergone assessment of BES Impact.              |
 
+## Scenario Record set 
+
+| Name                                         | Description                                                                                                                                                                                   |
+| :------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| NERC CIP-002 BES Cyber Systems Sample Record | In this scenario, three Bulk Electric System (BES) Cyber System records have been created, capturing essential information such as the Entity type and the associated Digital Control System. <br> These records enable users to correlate assets within the electric grid infrastructure. Additionally, a user-friendly interface includes an "Evaluate Impact" button, empowering users to trigger the calculation of BES Impact. |
+
 
 
 ## Playbook Collection
