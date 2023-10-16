@@ -21,7 +21,7 @@
     ],
     "prerequisite": null,
     "publisher": "Fortinet",
-    "description": "The Solution Pack facilitates the determination of Bulk Electric System (BES) Cyber Asset Category and BES Cyber System Impact, aligning with NERC CIP 002-5.1a.",
+    "description": "The Solution Pack plays a crucial role in the determination of Bulk Electric System (BES) Cyber Asset Category and BES Cyber System Impact, adhering to the stringent guidelines outlined in the North American Electric Reliability Corporation (NERC) Critical Infrastructure Protection (CIP) 002-5.1a standard. This ensures a comprehensive and compliant approach to managing the cybersecurity aspects of the Bulk Electric System.",
     "help": "https://github.com/fortinet-fortisoar/solution-pack-ot-compliance-nerc-cip-002/blob/release/1.0.0/README.md",
     "category": [
         "Compliance and Reporting",
@@ -98,6 +98,10 @@
             {
                 "apiName": "besImpactEvaluation",
                 "name": "BES Impact Evaluation"
+            },
+            {
+                "apiName": "recordDistribution",
+                "name": "Record Distribution"
             }
         ],
         "recordSets": [
