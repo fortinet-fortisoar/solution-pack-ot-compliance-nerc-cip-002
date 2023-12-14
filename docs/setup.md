@@ -10,10 +10,11 @@
 
 ## Prerequisites
 The **OT - Compliance - NERC CIP-002** solution pack depends on the following solution packs that are installed automatically &ndash; if not already installed.
-| Solution Pack Name | Version         | Purpose                                                                                           |
-| :----------------- | :-------------- | :------------------------------------------------------------------------------------------------ |
-| SOAR Framework     | 2.2.1 and later | Field *BES Cyber System Category *in Asset's module to tag Assets with BES Cyber System Category. |
-| SOC Simulator      | 1.0.2 and later | Requires to simulate the BES Cyber System Data                                                    |
+
+| Solution Pack Name | Version         | Purpose                                                                                                               |
+|:-------------------|:----------------|:----------------------------------------------------------------------------------------------------------------------|
+| SOAR Framework     | 2.2.1 and later | Required to list a field **BES Cyber System Category** in Asset module and tag Assets with BES Cyber System Category. |
+| SOC Simulator      | 1.0.2 and later | Required to simulate the BES Cyber System Data                                                                        |
 
 
 
