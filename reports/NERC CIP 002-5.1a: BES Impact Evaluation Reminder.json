@@ -1,0 +1,677 @@
+{
+    "@context": "\/api\/3\/contexts\/Reporting",
+    "@type": "Reporting",
+    "uuid": "909e3142-f092-4713-9bc7-b2c369f8edd6",
+    "displayName": "NERC CIP 002-5.1a: BES Impact Evaluation Reminder",
+    "type": "rows",
+    "templateType": "reporting",
+    "roles": [
+        "\/api\/3\/roles\/21d7a7c6-9d68-438f-b732-e8950c5f745b",
+        "\/api\/3\/roles\/7b56d139-7ee6-455e-8658-35727e202b8a",
+        "\/api\/3\/roles\/09346f6b-c52e-49c0-9ea5-eb5df2b0fa88"
+    ],
+    "parentTemplateId": null,
+    "config": {
+        "wid": "ad6b9920-e37c-4266-bead-4199e9334e0b",
+        "rows": [
+            {
+                "columns": [
+                    {
+                        "widgets": [
+                            {
+                                "type": "sectionHeader",
+                                "config": {
+                                    "wid": "ccf7dc1c-2961-4fc0-a83f-7748a429b95a",
+                                    "query": {
+                                        "filters": [],
+                                        "sort": [],
+                                        "limit": 10
+                                    },
+                                    "editorType": "html",
+                                    "sectionText": "<p style=\"text-align: center;\">&nbsp;<\/p>\n<p style=\"text-align: center; background: #4e94d0; padding-top: 5px;\"><span style=\"font-size: 25pt;\"><strong><span style=\"color: #efefee;\">NERC CIP 002-5.1a - BES Cyber System Impact Report<\/span>&nbsp;<\/strong><\/span><\/p>\n<p style=\"background: #2a5173; padding: 5px; text-align: center;\"><span style=\"font-size: 12pt; color: #efefee;\">BES Cyber System ID # <strong>{{bESCyberSystemID}}<\/strong> | Generated On {{todayDate}}<\/span><\/p>"
+                                }
+                            }
+                        ],
+                        "style": "col-lg-12"
+                    }
+                ],
+                "wid": "1d01e81c-04ba-4f15-8b78-af2c3cce1627",
+                "_collapsed": false
+            },
+            {
+                "columns": [
+                    {
+                        "widgets": [
+                            {
+                                "type": "sectionHeader",
+                                "config": {
+                                    "wid": "d7eba1e7-975a-4230-9a4e-a5da1981f466",
+                                    "query": {
+                                        "filters": [],
+                                        "sort": [],
+                                        "limit": 10
+                                    },
+                                    "editorType": "html",
+                                    "sectionText": "<p style=\"background: #2a5173; padding: 5px; text-align: left;\"><span style=\"font-size: 12pt; color: #efefee;\">SYSTEM HIGHLIGHTS<\/span><\/p>"
+                                }
+                            },
+                            {
+                                "type": "readonlyFormGroup",
+                                "config": {
+                                    "wid": "c632541b-a82f-4b1d-bf60-c07901788765",
+                                    "gridColumns": [],
+                                    "displayType": "card-view",
+                                    "widgetAlwaysDisplay": true,
+                                    "query": {
+                                        "sort": [],
+                                        "limit": 10,
+                                        "logic": "AND",
+                                        "filters": [
+                                            {
+                                                "field": "id",
+                                                "operator": "eq",
+                                                "_operator": "eq",
+                                                "value": "{{bESCyberSystemID}}",
+                                                "type": "primitive"
+                                            }
+                                        ]
+                                    },
+                                    "recordTitle": {
+                                        "type": "sectionHeader",
+                                        "wid": "d2b26f8a-a44a-4eca-81b5-6f81f34138b1",
+                                        "clone": false,
+                                        "remove": false
+                                    },
+                                    "relatedTemplate": {
+                                        "type": "rows",
+                                        "rows": [],
+                                        "wid": "7fe906a9-2bfa-491d-8a8c-2ef1fc5bc312"
+                                    },
+                                    "rows": [
+                                        {
+                                            "columns": [
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "title",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-12"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "resource": "b_e_s_cyber_systems",
+                                    "style": "display-inline-block"
+                                }
+                            },
+                            {
+                                "type": "readonlyFormGroup",
+                                "config": {
+                                    "wid": "d214a54c-9602-45bb-bd42-69c8a5a362a1",
+                                    "gridColumns": [],
+                                    "displayType": "card-view",
+                                    "widgetAlwaysDisplay": true,
+                                    "query": {
+                                        "sort": [],
+                                        "limit": 10,
+                                        "logic": "AND",
+                                        "filters": [
+                                            {
+                                                "field": "id",
+                                                "operator": "eq",
+                                                "_operator": "eq",
+                                                "value": "{{bESCyberSystemID}}",
+                                                "type": "primitive"
+                                            }
+                                        ]
+                                    },
+                                    "recordTitle": {
+                                        "type": "sectionHeader",
+                                        "wid": "d2b26f8a-a44a-4eca-81b5-6f81f34138b1",
+                                        "clone": false,
+                                        "remove": false
+                                    },
+                                    "relatedTemplate": {
+                                        "type": "rows",
+                                        "rows": [],
+                                        "wid": "7fe906a9-2bfa-491d-8a8c-2ef1fc5bc312"
+                                    },
+                                    "rows": [
+                                        {
+                                            "columns": [
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "description",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-12"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "resource": "b_e_s_cyber_systems",
+                                    "style": "display-inline-block"
+                                }
+                            },
+                            {
+                                "type": "readonlyFormGroup",
+                                "config": {
+                                    "wid": "7118bc32-07e2-451b-90cf-dcc1fe88fca5",
+                                    "gridColumns": [],
+                                    "displayType": "card-view",
+                                    "widgetAlwaysDisplay": true,
+                                    "query": {
+                                        "sort": [],
+                                        "limit": 10,
+                                        "logic": "AND",
+                                        "filters": [
+                                            {
+                                                "field": "id",
+                                                "operator": "eq",
+                                                "_operator": "eq",
+                                                "value": "{{bESCyberSystemID}}",
+                                                "type": "primitive"
+                                            }
+                                        ]
+                                    },
+                                    "recordTitle": {
+                                        "type": "sectionHeader",
+                                        "wid": "d2b26f8a-a44a-4eca-81b5-6f81f34138b1",
+                                        "clone": false,
+                                        "remove": false
+                                    },
+                                    "relatedTemplate": {
+                                        "type": "rows",
+                                        "rows": [],
+                                        "wid": "7fe906a9-2bfa-491d-8a8c-2ef1fc5bc312"
+                                    },
+                                    "rows": [
+                                        {
+                                            "columns": [
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "entityType",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-6"
+                                                },
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "digitalControlSystems",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-6"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "resource": "b_e_s_cyber_systems",
+                                    "style": "display-inline-block"
+                                }
+                            }
+                        ],
+                        "style": "col-lg-12"
+                    }
+                ],
+                "wid": "e604608e-ebba-449b-b7d7-95c9f0cd1eaa",
+                "_collapsed": false
+            },
+            {
+                "columns": [
+                    {
+                        "widgets": [
+                            {
+                                "type": "sectionHeader",
+                                "config": {
+                                    "wid": "459e68f0-a8da-4697-92ff-f78e7a2976a4",
+                                    "query": {
+                                        "filters": [],
+                                        "sort": [],
+                                        "limit": 10
+                                    },
+                                    "editorType": "html",
+                                    "sectionText": "<p style=\"background: #2a5173; padding: 5px; text-align: left;\"><span style=\"font-size: 12pt; color: #efefee;\">IMPACT ASSESSMENT DETAILS<\/span><\/p>"
+                                }
+                            },
+                            {
+                                "type": "readonlyFormGroup",
+                                "config": {
+                                    "wid": "1d655d44-94a4-4ea7-b762-7bd8a6c910ac",
+                                    "gridColumns": [],
+                                    "displayType": "card-view",
+                                    "widgetAlwaysDisplay": true,
+                                    "query": {
+                                        "sort": [],
+                                        "limit": 10,
+                                        "logic": "AND",
+                                        "filters": [
+                                            {
+                                                "field": "id",
+                                                "operator": "eq",
+                                                "_operator": "eq",
+                                                "value": "{{bESCyberSystemID}}",
+                                                "type": "primitive"
+                                            }
+                                        ]
+                                    },
+                                    "recordTitle": {
+                                        "type": "sectionHeader",
+                                        "wid": "d2b26f8a-a44a-4eca-81b5-6f81f34138b1",
+                                        "clone": false,
+                                        "remove": false
+                                    },
+                                    "relatedTemplate": {
+                                        "type": "rows",
+                                        "rows": [],
+                                        "wid": "7fe906a9-2bfa-491d-8a8c-2ef1fc5bc312"
+                                    },
+                                    "rows": [
+                                        {
+                                            "columns": [
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "bESImpact",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-6"
+                                                },
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "externalRoutableConnectivity",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-6"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "resource": "b_e_s_cyber_systems",
+                                    "style": "display-inline-block"
+                                }
+                            },
+                            {
+                                "type": "readonlyFormGroup",
+                                "config": {
+                                    "wid": "93699f43-5d1e-457d-a68b-f8cd4f4df417",
+                                    "gridColumns": [],
+                                    "displayType": "card-view",
+                                    "widgetAlwaysDisplay": true,
+                                    "query": {
+                                        "sort": [],
+                                        "limit": 10,
+                                        "logic": "AND",
+                                        "filters": [
+                                            {
+                                                "field": "id",
+                                                "operator": "eq",
+                                                "_operator": "eq",
+                                                "value": "{{bESCyberSystemID}}",
+                                                "type": "primitive"
+                                            }
+                                        ]
+                                    },
+                                    "recordTitle": {
+                                        "type": "sectionHeader",
+                                        "wid": "d2b26f8a-a44a-4eca-81b5-6f81f34138b1",
+                                        "clone": false,
+                                        "remove": false
+                                    },
+                                    "relatedTemplate": {
+                                        "type": "rows",
+                                        "rows": [],
+                                        "wid": "7fe906a9-2bfa-491d-8a8c-2ef1fc5bc312"
+                                    },
+                                    "rows": [
+                                        {
+                                            "columns": [
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "selectedCriteria",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-12"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "resource": "b_e_s_cyber_systems",
+                                    "style": "display-inline-block"
+                                }
+                            },
+                            {
+                                "type": "readonlyFormGroup",
+                                "config": {
+                                    "wid": "239f71be-387e-4b34-8d09-c94c98ebe0b4",
+                                    "gridColumns": [],
+                                    "displayType": "card-view",
+                                    "widgetAlwaysDisplay": true,
+                                    "query": {
+                                        "sort": [],
+                                        "limit": 10,
+                                        "logic": "AND",
+                                        "filters": [
+                                            {
+                                                "field": "id",
+                                                "operator": "eq",
+                                                "_operator": "eq",
+                                                "value": "{{bESCyberSystemID}}",
+                                                "type": "primitive"
+                                            }
+                                        ]
+                                    },
+                                    "recordTitle": {
+                                        "type": "sectionHeader",
+                                        "wid": "d2b26f8a-a44a-4eca-81b5-6f81f34138b1",
+                                        "clone": false,
+                                        "remove": false
+                                    },
+                                    "relatedTemplate": {
+                                        "type": "rows",
+                                        "rows": [],
+                                        "wid": "7fe906a9-2bfa-491d-8a8c-2ef1fc5bc312"
+                                    },
+                                    "rows": [
+                                        {
+                                            "columns": [
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "lastAssessmentDate",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-12"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "resource": "b_e_s_cyber_systems",
+                                    "style": "display-inline-block"
+                                }
+                            }
+                        ],
+                        "style": "col-lg-12"
+                    }
+                ],
+                "wid": "6c64a8a7-be86-4224-95c0-b0a8ae5c55db",
+                "_collapsed": false
+            },
+            {
+                "columns": [
+                    {
+                        "widgets": [
+                            {
+                                "type": "sectionHeader",
+                                "config": {
+                                    "wid": "3d82626d-d2c4-4933-853d-429dd0df0946",
+                                    "query": {
+                                        "filters": [],
+                                        "sort": [],
+                                        "limit": 10
+                                    },
+                                    "editorType": "html",
+                                    "sectionText": "<p style=\"background: #2a5173; padding: 5px; text-align: left;\"><span style=\"font-size: 12pt; color: #efefee;\">ASSOCIATED ASSETS<\/span><\/p>"
+                                }
+                            },
+                            {
+                                "type": "recordDistribution-1.0.2",
+                                "config": {
+                                    "wid": "9eeaf66b-56fa-446a-a86f-eef59ca33351",
+                                    "query": {
+                                        "sort": [],
+                                        "limit": 100,
+                                        "logic": "AND",
+                                        "filters": [
+                                            {
+                                                "field": "bESCyberSystems.id",
+                                                "operator": "eq",
+                                                "_operator": "eq",
+                                                "value": "{{bESCyberSystemID}}",
+                                                "type": "primitive"
+                                            }
+                                        ]
+                                    },
+                                    "mapping": [],
+                                    "assignedToSetting": "onlyMe",
+                                    "aggregate": true,
+                                    "title": "Cyber Assets by Category",
+                                    "resource": "assets",
+                                    "pickListField": "bESCyberAssetCategory",
+                                    "pickListFieldItems": [
+                                        {
+                                            "@id": "\/api\/3\/picklists\/807a51b8-ef06-4f0c-91be-ee99c6f649e9",
+                                            "@type": "Picklist",
+                                            "itemValue": "Protected Cyber Asset",
+                                            "orderIndex": 0,
+                                            "color": null,
+                                            "icon": null,
+                                            "listName": "\/api\/3\/picklist_names\/8b167004-257b-407c-86f7-ee65059176b0",
+                                            "uuid": "807a51b8-ef06-4f0c-91be-ee99c6f649e9",
+                                            "id": 518,
+                                            "importedBy": []
+                                        },
+                                        {
+                                            "@id": "\/api\/3\/picklists\/c9093965-69b5-4bc4-90ba-d59e256a957e",
+                                            "@type": "Picklist",
+                                            "itemValue": "Electronic Access Control or Monitoring Systems",
+                                            "orderIndex": 1,
+                                            "color": null,
+                                            "icon": null,
+                                            "listName": "\/api\/3\/picklist_names\/8b167004-257b-407c-86f7-ee65059176b0",
+                                            "uuid": "c9093965-69b5-4bc4-90ba-d59e256a957e",
+                                            "id": 519,
+                                            "importedBy": []
+                                        },
+                                        {
+                                            "@id": "\/api\/3\/picklists\/740d017c-7c92-4e42-ac53-7fda17122722",
+                                            "@type": "Picklist",
+                                            "itemValue": "Physical Access Control Systems",
+                                            "orderIndex": 2,
+                                            "color": null,
+                                            "icon": null,
+                                            "listName": "\/api\/3\/picklist_names\/8b167004-257b-407c-86f7-ee65059176b0",
+                                            "uuid": "740d017c-7c92-4e42-ac53-7fda17122722",
+                                            "id": 520,
+                                            "importedBy": []
+                                        },
+                                        {
+                                            "@id": "\/api\/3\/picklists\/f9145b90-6cae-4a6a-b5d9-0e0607982829",
+                                            "@type": "Picklist",
+                                            "itemValue": "Transient Cyber Asset",
+                                            "orderIndex": 3,
+                                            "color": null,
+                                            "icon": null,
+                                            "listName": "\/api\/3\/picklist_names\/8b167004-257b-407c-86f7-ee65059176b0",
+                                            "uuid": "f9145b90-6cae-4a6a-b5d9-0e0607982829",
+                                            "id": 521,
+                                            "importedBy": []
+                                        }
+                                    ],
+                                    "iconField": "assetIcon",
+                                    "titleField": "hostname",
+                                    "showCorrelation": true
+                                }
+                            }
+                        ],
+                        "style": "col-lg-12"
+                    }
+                ],
+                "wid": "c1d4776a-5e8d-4cbf-aa5e-e3e0d8bae733",
+                "_collapsed": false
+            },
+            {
+                "columns": [
+                    {
+                        "widgets": [
+                            {
+                                "type": "sectionHeader",
+                                "config": {
+                                    "wid": "1931aeee-eca9-4eb2-94ac-82167fe12f1b",
+                                    "query": {
+                                        "filters": [],
+                                        "sort": [],
+                                        "limit": 10
+                                    },
+                                    "editorType": "html",
+                                    "sectionText": "<p style=\"background: #2a5173; padding: 5px; text-align: left;\"><span style=\"font-size: 12pt; color: #efefee;\">LAST 5 COMMENTS<\/span><\/p>"
+                                }
+                            },
+                            {
+                                "type": "readonlyFormGroup",
+                                "config": {
+                                    "wid": "92454f6c-10ca-42e8-b804-f2d84b026c15",
+                                    "gridColumns": [],
+                                    "displayType": "card-view",
+                                    "widgetAlwaysDisplay": true,
+                                    "query": {
+                                        "sort": [],
+                                        "limit": 5,
+                                        "logic": "AND",
+                                        "filters": [
+                                            {
+                                                "field": "bESCyberSystems.id",
+                                                "operator": "eq",
+                                                "_operator": "eq",
+                                                "value": "{{bESCyberSystemID}}",
+                                                "type": "primitive"
+                                            }
+                                        ]
+                                    },
+                                    "recordTitle": {
+                                        "type": "sectionHeader",
+                                        "wid": "ba34c624-80f8-46ea-a564-2afd54dede3d",
+                                        "clone": false,
+                                        "remove": false
+                                    },
+                                    "relatedTemplate": {
+                                        "type": "rows",
+                                        "rows": [],
+                                        "wid": "f1730335-a6a8-4373-a18f-41f71496d18e"
+                                    },
+                                    "rows": [
+                                        {
+                                            "columns": [
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "content",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-12"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "columns": [
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "createUser",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-6"
+                                                },
+                                                {
+                                                    "fields": [
+                                                        {
+                                                            "name": "createDate",
+                                                            "highlightMode": true,
+                                                            "linky": true,
+                                                            "readOnly": true
+                                                        }
+                                                    ],
+                                                    "style": "col-lg-6"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "resource": "comments",
+                                    "style": "display-inline-block"
+                                }
+                            }
+                        ],
+                        "style": "col-lg-12"
+                    }
+                ],
+                "wid": "ded10c95-6140-4c63-a70d-454523983237",
+                "_collapsed": false
+            },
+            {
+                "columns": [
+                    {
+                        "widgets": [
+                            {
+                                "type": "sectionHeader",
+                                "config": {
+                                    "wid": "92cea573-90d3-4e36-8d3c-5943d674251e",
+                                    "query": {
+                                        "filters": [],
+                                        "sort": [],
+                                        "limit": 10
+                                    },
+                                    "editorType": "html",
+                                    "sectionText": "<p style=\"text-align: center;\"><span style=\"font-size: 10pt;\">Report Generated By FortiSOAR&trade;<\/span><\/p>"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "wid": "1f297be5-f849-4e3e-97de-12b7086ef18d"
+            }
+        ],
+        "metadata": {
+            "customTemplateTitle": "Reporting"
+        },
+        "readOnlyFlag": false,
+        "refreshInterval": 10
+    },
+    "filterArray": [
+        {
+            "key": "bESCyberSystemID",
+            "open": true,
+            "type": "number",
+            "label": "BES Cyber System ID",
+            "value": null,
+            "required": true,
+            "expression": "{{bESCyberSystemID}}",
+            "defaultValue": null
+        }
+    ],
+    "updateDate": null
+}

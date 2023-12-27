@@ -1,0 +1,90 @@
+{
+    "@context": "\/api\/3\/contexts\/PicklistName",
+    "@id": "\/api\/3\/picklist_names\/e54c4a94-b205-4f20-8f4a-b2d93583f8e6",
+    "@type": "PicklistName",
+    "name": "BES Entity Type",
+    "system": false,
+    "picklists": [
+        {
+            "@id": "\/api\/3\/picklists\/fb589c75-0a11-4d1b-a5e8-f5c19d227ba4",
+            "@type": "Picklist",
+            "itemValue": "Balancing Authority (BA)",
+            "orderIndex": 0,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/e54c4a94-b205-4f20-8f4a-b2d93583f8e6",
+            "uuid": "fb589c75-0a11-4d1b-a5e8-f5c19d227ba4"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/ee0e209e-2d09-4a0c-8adb-9a21c21953e1",
+            "@type": "Picklist",
+            "itemValue": "Distribution Provider (DP)",
+            "orderIndex": 1,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/e54c4a94-b205-4f20-8f4a-b2d93583f8e6",
+            "uuid": "ee0e209e-2d09-4a0c-8adb-9a21c21953e1"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/614e9ad2-1989-49cf-8276-564dbb053032",
+            "@type": "Picklist",
+            "itemValue": "Generator Operator (GOP)",
+            "orderIndex": 2,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/e54c4a94-b205-4f20-8f4a-b2d93583f8e6",
+            "uuid": "614e9ad2-1989-49cf-8276-564dbb053032"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/3ec4e251-0062-4fbf-8fdc-e932b8228d7b",
+            "@type": "Picklist",
+            "itemValue": "Generator Owner (GO)",
+            "orderIndex": 3,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/e54c4a94-b205-4f20-8f4a-b2d93583f8e6",
+            "uuid": "3ec4e251-0062-4fbf-8fdc-e932b8228d7b"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/8246c67a-2312-4331-95f7-5d251daf23d0",
+            "@type": "Picklist",
+            "itemValue": "Interchange Coordinator (IC) \/ Interchange Authority (IA)",
+            "orderIndex": 4,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/e54c4a94-b205-4f20-8f4a-b2d93583f8e6",
+            "uuid": "8246c67a-2312-4331-95f7-5d251daf23d0"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/a02a1905-6123-45f2-967d-900188c50193",
+            "@type": "Picklist",
+            "itemValue": "Reliability Coordinator (RC)",
+            "orderIndex": 5,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/e54c4a94-b205-4f20-8f4a-b2d93583f8e6",
+            "uuid": "a02a1905-6123-45f2-967d-900188c50193"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/fe3c27f5-bea2-4dfa-bef8-1e30e4d7d828",
+            "@type": "Picklist",
+            "itemValue": "Transmission Operator (TOP)",
+            "orderIndex": 6,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/e54c4a94-b205-4f20-8f4a-b2d93583f8e6",
+            "uuid": "fe3c27f5-bea2-4dfa-bef8-1e30e4d7d828"
+        },
+        {
+            "@id": "\/api\/3\/picklists\/f7c36277-d932-4d6f-9c37-aea3bc994144",
+            "@type": "Picklist",
+            "itemValue": "Transmission Owner (TO)",
+            "orderIndex": 7,
+            "color": null,
+            "icon": null,
+            "listName": "\/api\/3\/picklist_names\/e54c4a94-b205-4f20-8f4a-b2d93583f8e6",
+            "uuid": "f7c36277-d932-4d6f-9c37-aea3bc994144"
+        }
+    ],
+    "uuid": "e54c4a94-b205-4f20-8f4a-b2d93583f8e6"
+}

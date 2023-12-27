@@ -1,0 +1,733 @@
+{
+    "@context": "\/api\/3\/contexts\/SystemViewTemplate",
+    "@type": "SystemViewTemplate",
+    "type": "rows",
+    "config": {
+        "rows": [
+            {
+                "columns": [
+                    {
+                        "widgets": [
+                            {
+                                "type": "primaryDetail",
+                                "config": {
+                                    "wid": "590094f6-f99a-477a-b295-8d5580b7ebef",
+                                    "idField": "id",
+                                    "picklistFieldReadOnly": false,
+                                    "titleFieldReadOnly": false,
+                                    "featuredRelationship": {
+                                        "field": null,
+                                        "preText": "Under Investigation In",
+                                        "query": null,
+                                        "statusField": null,
+                                        "sort": []
+                                    },
+                                    "picklistField": "bESImpact",
+                                    "titleField": "title"
+                                }
+                            }
+                        ],
+                        "style": "col-lg-12"
+                    }
+                ],
+                "wid": "428dc9bc-64e7-492a-bba1-6f2be2b9ccf0",
+                "_collapsed": false
+            },
+            {
+                "columns": [
+                    {
+                        "widgets": [
+                            {
+                                "type": "tabs",
+                                "config": {
+                                    "wid": "aeb66302-d2b0-4597-813e-53d440d3a9e3",
+                                    "tabs": [
+                                        {
+                                            "title": "Systems Details",
+                                            "active": 0,
+                                            "icon": "icon icon-primary-detail",
+                                            "widget": {
+                                                "type": "rows",
+                                                "config": {
+                                                    "wid": "7f1bbebd-d37a-4d12-8628-6e8c24489e8c",
+                                                    "rows": [
+                                                        {
+                                                            "columns": [
+                                                                {
+                                                                    "widgets": [
+                                                                        {
+                                                                            "type": "editableFormGroup",
+                                                                            "config": {
+                                                                                "wid": "ef480bed-89f6-4177-b20c-5983d8773d18",
+                                                                                "rows": [
+                                                                                    {
+                                                                                        "columns": [
+                                                                                            {
+                                                                                                "fields": [
+                                                                                                    {
+                                                                                                        "name": "title",
+                                                                                                        "highlightMode": true,
+                                                                                                        "linky": true,
+                                                                                                        "readOnly": false
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ],
+                                                                                "usePlaceholder": true,
+                                                                                "title": "Title"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "editableFormGroup",
+                                                                            "config": {
+                                                                                "wid": "ea2e737e-34c5-4cff-a4b2-4c93e8e63418",
+                                                                                "rows": [
+                                                                                    {
+                                                                                        "columns": [
+                                                                                            {
+                                                                                                "fields": [
+                                                                                                    {
+                                                                                                        "name": "description",
+                                                                                                        "highlightMode": true,
+                                                                                                        "linky": true,
+                                                                                                        "readOnly": false
+                                                                                                    }
+                                                                                                ]
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                ],
+                                                                                "usePlaceholder": true,
+                                                                                "title": "Description"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "editableFormGroup",
+                                                                            "config": {
+                                                                                "wid": "a9281fa7-d535-41c8-a092-cc7f516a9c9f",
+                                                                                "rows": [
+                                                                                    {
+                                                                                        "columns": [
+                                                                                            {
+                                                                                                "fields": [
+                                                                                                    {
+                                                                                                        "name": "entityType",
+                                                                                                        "highlightMode": true,
+                                                                                                        "linky": true,
+                                                                                                        "readOnly": true
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "digitalControlSystems",
+                                                                                                        "highlightMode": true,
+                                                                                                        "linky": true,
+                                                                                                        "readOnly": true
+                                                                                                    }
+                                                                                                ],
+                                                                                                "style": "col-lg-6"
+                                                                                            },
+                                                                                            {
+                                                                                                "fields": [
+                                                                                                    {
+                                                                                                        "name": "createDate",
+                                                                                                        "highlightMode": true,
+                                                                                                        "linky": true,
+                                                                                                        "readOnly": true
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "createUser",
+                                                                                                        "highlightMode": true,
+                                                                                                        "linky": true,
+                                                                                                        "readOnly": true
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "modifyDate",
+                                                                                                        "highlightMode": true,
+                                                                                                        "linky": true,
+                                                                                                        "readOnly": true
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "name": "modifyUser",
+                                                                                                        "highlightMode": true,
+                                                                                                        "linky": true,
+                                                                                                        "readOnly": true
+                                                                                                    }
+                                                                                                ],
+                                                                                                "style": "col-lg-6"
+                                                                                            }
+                                                                                        ],
+                                                                                        "style": "display-inline-block"
+                                                                                    }
+                                                                                ],
+                                                                                "title": "System Information"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "style": "col-lg-12"
+                                                                }
+                                                            ],
+                                                            "wid": "02acb501-18a2-4c81-b55d-c61a460b7938",
+                                                            "_collapsed": false,
+                                                            "container": true
+                                                        },
+                                                        {
+                                                            "columns": [
+                                                                {
+                                                                    "widgets": [
+                                                                        {
+                                                                            "type": "sectionHeader",
+                                                                            "config": {
+                                                                                "wid": "45b97964-471b-4fec-941c-3f8217e6e662",
+                                                                                "query": {
+                                                                                    "filters": [],
+                                                                                    "sort": [],
+                                                                                    "limit": 10
+                                                                                },
+                                                                                "editorType": "html",
+                                                                                "sectionText": "<h3 class=\"custom-label-size margin-bottom-0 section-border padding-left-md ng-binding\" data-ng-bind=\"config.title\" data-ng-show=\"::config.title\" aria-hidden=\"false\">Impact Assessment Details<\/h3>"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "type": "rows",
+                                                                            "config": {
+                                                                                "wid": "6ef28775-dd03-4c77-ab36-155768581014",
+                                                                                "rows": [
+                                                                                    {
+                                                                                        "columns": [
+                                                                                            {
+                                                                                                "widgets": [
+                                                                                                    {
+                                                                                                        "type": "sectionHeader",
+                                                                                                        "config": {
+                                                                                                            "wid": "a06c6759-a601-43c4-ae80-a6ea7f17faee",
+                                                                                                            "query": {
+                                                                                                                "filters": [],
+                                                                                                                "sort": [],
+                                                                                                                "limit": 10
+                                                                                                            },
+                                                                                                            "editorType": "html",
+                                                                                                            "sectionText": "<div id=\"container\" style=\"float: left !important; padding: 15px;\">\n<div id=\"content-container\" style=\"background-color: transparent; border: 0px solid #555; border-radius: 8px; padding: 08px; max-width: 400px; margin: 0 auto; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); text-align: left;\">\n<div style=\"font-size: 18px; margin-bottom: 10px;\"><strong>Initiate Impact Assessment Exercise<\/strong><\/div>\n<div style=\"font-size: 16px; margin-bottom: 20px;\"><span style=\"font-size: 10pt;\">Evaluate BES Cyber System Impact based on multiple criteria as defined in NERC CIP 002 5.1a guidelines<\/span><\/div>\n<button id=\"launchWidget-besImpactEvaluation-1.0.0\" class=\"btn btn-sm btn-primary\">Evaluate Impact<\/button><\/div>\n<\/div>"
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "style": "col-lg-6"
+                                                                                            },
+                                                                                            {
+                                                                                                "widgets": [
+                                                                                                    {
+                                                                                                        "type": "editableFormGroup",
+                                                                                                        "config": {
+                                                                                                            "wid": "40da5362-774b-4205-99f9-49ca5c7c88e1",
+                                                                                                            "rows": [
+                                                                                                                {
+                                                                                                                    "columns": [
+                                                                                                                        {
+                                                                                                                            "fields": [
+                                                                                                                                {
+                                                                                                                                    "name": "bESImpact",
+                                                                                                                                    "highlightMode": true,
+                                                                                                                                    "linky": true,
+                                                                                                                                    "readOnly": true
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "name": "externalRoutableConnectivity",
+                                                                                                                                    "highlightMode": true,
+                                                                                                                                    "linky": true,
+                                                                                                                                    "readOnly": false
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "name": "lastAssessmentDate",
+                                                                                                                                    "highlightMode": true,
+                                                                                                                                    "linky": true,
+                                                                                                                                    "readOnly": true
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "style": "col-lg-12"
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "style": "display-inline-block"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "title": "",
+                                                                                                            "usePlaceholder": false
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "style": "col-lg-6"
+                                                                                            }
+                                                                                        ],
+                                                                                        "wid": "2daed255-7033-48f9-8b02-75a96d46c866",
+                                                                                        "collapsible": false,
+                                                                                        "collapsibleIndex": 0,
+                                                                                        "_collapsed": false,
+                                                                                        "container": false
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "style": "col-lg-12"
+                                                                }
+                                                            ],
+                                                            "wid": "6f8a7c41-34cf-4be9-813e-71c9692a9714",
+                                                            "collapsible": false,
+                                                            "collapsibleIndex": 0,
+                                                            "_collapsed": false,
+                                                            "container": false
+                                                        },
+                                                        {
+                                                            "columns": [
+                                                                {
+                                                                    "widgets": [
+                                                                        {
+                                                                            "type": "rows",
+                                                                            "config": {
+                                                                                "wid": "06ad2ff2-2e05-44ba-88ac-72705f12637f",
+                                                                                "rows": [
+                                                                                    {
+                                                                                        "columns": [
+                                                                                            {
+                                                                                                "widgets": [
+                                                                                                    {
+                                                                                                        "type": "editableFormGroup",
+                                                                                                        "config": {
+                                                                                                            "wid": "d822e321-8df8-45f7-afbf-5841dce2e0d8",
+                                                                                                            "rows": [
+                                                                                                                {
+                                                                                                                    "columns": [
+                                                                                                                        {
+                                                                                                                            "fields": [
+                                                                                                                                {
+                                                                                                                                    "name": "selectedCriteria",
+                                                                                                                                    "highlightMode": true,
+                                                                                                                                    "linky": true,
+                                                                                                                                    "readOnly": true
+                                                                                                                                }
+                                                                                                                            ],
+                                                                                                                            "style": "col-lg-12"
+                                                                                                                        }
+                                                                                                                    ],
+                                                                                                                    "style": "display-inline-block"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "usePlaceholder": true,
+                                                                                                            "title": "Last Assessment Criteria",
+                                                                                                            "visibility": {
+                                                                                                                "conditionalVisibility": true,
+                                                                                                                "filter": {
+                                                                                                                    "sort": [],
+                                                                                                                    "limit": 30,
+                                                                                                                    "logic": "AND",
+                                                                                                                    "filters": [
+                                                                                                                        {
+                                                                                                                            "field": "selectedCriteria",
+                                                                                                                            "operator": "isnull",
+                                                                                                                            "_operator": "isnull",
+                                                                                                                            "value": "false",
+                                                                                                                            "type": "primitive"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                ],
+                                                                                                "style": "col-lg-12"
+                                                                                            }
+                                                                                        ],
+                                                                                        "wid": "01af2c8e-f59f-430b-9f41-3b4a29d26e55",
+                                                                                        "_collapsed": false,
+                                                                                        "container": true
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "style": "col-lg-12"
+                                                                }
+                                                            ],
+                                                            "wid": "cd3dc30a-2728-4005-811f-34aee7a285df",
+                                                            "collapsible": false,
+                                                            "collapsibleIndex": 0,
+                                                            "_collapsed": false,
+                                                            "container": false
+                                                        },
+                                                        {
+                                                            "columns": [
+                                                                {
+                                                                    "widgets": [
+                                                                        {
+                                                                            "type": "recordDistribution-1.0.2",
+                                                                            "config": {
+                                                                                "wid": "0d62d585-6521-4e0e-b137-493310b68635",
+                                                                                "query": {
+                                                                                    "sort": [],
+                                                                                    "limit": 100,
+                                                                                    "logic": "AND",
+                                                                                    "filters": []
+                                                                                },
+                                                                                "mapping": [],
+                                                                                "assignedToSetting": "onlyMe",
+                                                                                "aggregate": true,
+                                                                                "title": "Associated Assets By Category",
+                                                                                "resource": "assets",
+                                                                                "pickListField": "bESCyberAssetCategory",
+                                                                                "pickListFieldItems": [
+                                                                                    {
+                                                                                        "@id": "\/api\/3\/picklists\/807a51b8-ef06-4f0c-91be-ee99c6f649e9",
+                                                                                        "@type": "Picklist",
+                                                                                        "itemValue": "Protected Cyber Asset",
+                                                                                        "orderIndex": 0,
+                                                                                        "color": null,
+                                                                                        "icon": null,
+                                                                                        "listName": "\/api\/3\/picklist_names\/8b167004-257b-407c-86f7-ee65059176b0",
+                                                                                        "uuid": "807a51b8-ef06-4f0c-91be-ee99c6f649e9",
+                                                                                        "id": 518,
+                                                                                        "importedBy": []
+                                                                                    },
+                                                                                    {
+                                                                                        "@id": "\/api\/3\/picklists\/c9093965-69b5-4bc4-90ba-d59e256a957e",
+                                                                                        "@type": "Picklist",
+                                                                                        "itemValue": "Electronic Access Control or Monitoring Systems",
+                                                                                        "orderIndex": 1,
+                                                                                        "color": null,
+                                                                                        "icon": null,
+                                                                                        "listName": "\/api\/3\/picklist_names\/8b167004-257b-407c-86f7-ee65059176b0",
+                                                                                        "uuid": "c9093965-69b5-4bc4-90ba-d59e256a957e",
+                                                                                        "id": 519,
+                                                                                        "importedBy": []
+                                                                                    },
+                                                                                    {
+                                                                                        "@id": "\/api\/3\/picklists\/740d017c-7c92-4e42-ac53-7fda17122722",
+                                                                                        "@type": "Picklist",
+                                                                                        "itemValue": "Physical Access Control Systems",
+                                                                                        "orderIndex": 2,
+                                                                                        "color": null,
+                                                                                        "icon": null,
+                                                                                        "listName": "\/api\/3\/picklist_names\/8b167004-257b-407c-86f7-ee65059176b0",
+                                                                                        "uuid": "740d017c-7c92-4e42-ac53-7fda17122722",
+                                                                                        "id": 520,
+                                                                                        "importedBy": []
+                                                                                    },
+                                                                                    {
+                                                                                        "@id": "\/api\/3\/picklists\/f9145b90-6cae-4a6a-b5d9-0e0607982829",
+                                                                                        "@type": "Picklist",
+                                                                                        "itemValue": "Transient Cyber Asset",
+                                                                                        "orderIndex": 3,
+                                                                                        "color": null,
+                                                                                        "icon": null,
+                                                                                        "listName": "\/api\/3\/picklist_names\/8b167004-257b-407c-86f7-ee65059176b0",
+                                                                                        "uuid": "f9145b90-6cae-4a6a-b5d9-0e0607982829",
+                                                                                        "id": 521,
+                                                                                        "importedBy": []
+                                                                                    }
+                                                                                ],
+                                                                                "iconField": "assetIcon",
+                                                                                "titleField": "hostname",
+                                                                                "showCorrelation": true,
+                                                                                "visibility": {
+                                                                                    "conditionalVisibility": true,
+                                                                                    "filter": {
+                                                                                        "sort": [],
+                                                                                        "limit": 30,
+                                                                                        "logic": "AND",
+                                                                                        "filters": [
+                                                                                            {
+                                                                                                "field": "assets.id",
+                                                                                                "operator": "isnull",
+                                                                                                "_operator": "isnull",
+                                                                                                "value": "false",
+                                                                                                "type": "primitive"
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "style": "col-lg-12"
+                                                                }
+                                                            ],
+                                                            "wid": "8703676f-47b7-4337-b0c4-245070ac085f",
+                                                            "_collapsed": false,
+                                                            "container": true
+                                                        },
+                                                        {
+                                                            "columns": [
+                                                                {
+                                                                    "widgets": [
+                                                                        {
+                                                                            "type": "tabs",
+                                                                            "config": {
+                                                                                "tabs": [
+                                                                                    {
+                                                                                        "title": "Assets",
+                                                                                        "active": 0,
+                                                                                        "widget": {
+                                                                                            "type": "relationship.subtab",
+                                                                                            "config": {
+                                                                                                "wid": "c27b061a-0f49-4343-9e92-d716284bb8c1",
+                                                                                                "excludes": [],
+                                                                                                "selectionType": "include",
+                                                                                                "actionButtons": [],
+                                                                                                "expandableCol": [],
+                                                                                                "enableHorizontalScroll": [],
+                                                                                                "includes": [
+                                                                                                    "assets"
+                                                                                                ]
+                                                                                            }
+                                                                                        },
+                                                                                        "icon": "icon icon-assets",
+                                                                                        "show": true,
+                                                                                        "visible": true
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Correlations",
+                                                                                        "widget": {
+                                                                                            "type": "relationship.subtab",
+                                                                                            "config": {
+                                                                                                "excludes": [
+                                                                                                    "assets",
+                                                                                                    "comments",
+                                                                                                    "owners"
+                                                                                                ],
+                                                                                                "wid": "021baa75-171b-4961-9b04-a739f98aaf24",
+                                                                                                "selectionType": "exclude",
+                                                                                                "actionButtons": [],
+                                                                                                "expandableCol": [],
+                                                                                                "enableHorizontalScroll": [],
+                                                                                                "includes": []
+                                                                                            }
+                                                                                        },
+                                                                                        "show": false,
+                                                                                        "visible": true,
+                                                                                        "icon": "fa fa-exchange"
+                                                                                    },
+                                                                                    {
+                                                                                        "title": "Access Control",
+                                                                                        "active": 0,
+                                                                                        "widget": {
+                                                                                            "type": "accessControl-2.1.0",
+                                                                                            "config": {
+                                                                                                "wid": "19eee7dc-7287-43e6-bea2-0245413cc282",
+                                                                                                "inlineEditor": true,
+                                                                                                "optionalField1": true,
+                                                                                                "optionalField2": true
+                                                                                            }
+                                                                                        },
+                                                                                        "icon": "icon icon-access-control",
+                                                                                        "show": false,
+                                                                                        "visible": true
+                                                                                    }
+                                                                                ],
+                                                                                "wid": "253e7d7d-d4cd-4b6a-be82-632872b5f7fb"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "style": "col-lg-12"
+                                                                }
+                                                            ],
+                                                            "wid": "67e545d8-b093-4201-b782-9ce2a047e533",
+                                                            "_collapsed": false
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "show": true,
+                                            "visible": true
+                                        },
+                                        {
+                                            "title": "Playbooks",
+                                            "active": 0,
+                                            "widget": {
+                                                "type": "executedPlaybooks",
+                                                "config": {
+                                                    "wid": "030426e0-1acd-4e7b-b181-11638b5a225d"
+                                                }
+                                            },
+                                            "icon": "icon icon-playbooks",
+                                            "show": false,
+                                            "visible": true
+                                        },
+                                        {
+                                            "title": "Audit Log",
+                                            "active": 0,
+                                            "widget": {
+                                                "type": "rows",
+                                                "config": {
+                                                    "wid": "a7a6a830-f64e-413b-a59a-9959b9177abf",
+                                                    "rows": [
+                                                        {
+                                                            "columns": [
+                                                                {
+                                                                    "widgets": [
+                                                                        {
+                                                                            "type": "timeline",
+                                                                            "config": {
+                                                                                "wid": "c66d1ef6-f70f-41a8-84ef-01dc4136a455"
+                                                                            }
+                                                                        }
+                                                                    ],
+                                                                    "style": "col-lg-12"
+                                                                }
+                                                            ],
+                                                            "wid": "4969fa43-72c0-44c5-a33a-06b7a019b8a2",
+                                                            "_collapsed": false
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "icon": "fa fa-eye",
+                                            "show": false,
+                                            "visible": true
+                                        }
+                                    ],
+                                    "isPrimaryTab": true
+                                }
+                            }
+                        ],
+                        "style": "col-lg-12"
+                    }
+                ],
+                "wid": "715aa1ec-fd15-4448-99ff-e048cd6a8b66",
+                "_collapsed": false
+            }
+        ],
+        "actionButtons": [
+            {
+                "id": "\/api\/3\/workflows\/62fdb174-92b2-43af-8392-f6554b6a848e",
+                "name": "Generate BES System Impact Report",
+                "icon": "icon icon-reports"
+            }
+        ],
+        "wid": "6916d7f2-4a0e-49ad-8ac3-14fae8b86f23",
+        "metadata": [],
+        "workspace": {
+            "predictions": {
+                "enable": true,
+                "fields": [
+                    {
+                        "name": "entityType",
+                        "title": "Entity Type",
+                        "type": "multiselectpicklist"
+                    },
+                    {
+                        "name": "digitalControlSystems",
+                        "title": "Digital Control Systems",
+                        "type": "multiselectpicklist"
+                    }
+                ],
+                "aggs": [
+                    {
+                        "name": "bESImpact",
+                        "title": "BES Impact",
+                        "type": "picklist"
+                    },
+                    {
+                        "name": "externalRoutableConnectivity",
+                        "title": "External Routable Connectivity",
+                        "type": "picklist"
+                    }
+                ],
+                "enableWeightRange": false,
+                "useSimilarCriteria": true,
+                "filter": {
+                    "sort": [],
+                    "limit": 30,
+                    "logic": "AND",
+                    "filters": [
+                        {
+                            "logic": "AND",
+                            "filters": [
+                                {
+                                    "field": "createDate",
+                                    "operator": "gt",
+                                    "value": "{{getRelativeDate(0,0,-30,\"end\",\"end\",\"end\")}}",
+                                    "type": "datetime"
+                                }
+                            ],
+                            "_field": "createDate",
+                            "_value": {
+                                "differenceType": "days",
+                                "differenceValue": -30
+                            },
+                            "_operator": "gt",
+                            "type": "datetime"
+                        }
+                    ]
+                }
+            },
+            "similarRecords": {
+                "enable": false,
+                "fields": [],
+                "enableWeightRange": false,
+                "filter": {
+                    "sort": [],
+                    "limit": 30,
+                    "logic": "AND",
+                    "filters": [
+                        {
+                            "logic": "AND",
+                            "filters": [
+                                {
+                                    "field": "createDate",
+                                    "operator": "gt",
+                                    "value": "{{getRelativeDate(0,0,-30,\"end\",\"end\",\"end\")}}",
+                                    "type": "datetime"
+                                }
+                            ],
+                            "_field": "createDate",
+                            "_value": {
+                                "differenceType": "days",
+                                "differenceValue": -30
+                            },
+                            "_operator": "gt",
+                            "type": "datetime"
+                        }
+                    ]
+                },
+                "playbooks": [],
+                "mapping": {
+                    "title": "",
+                    "subTitle1": "",
+                    "subTitle2": "",
+                    "subTitle3": "",
+                    "picklistBar": ""
+                }
+            },
+            "suggestedPlaybooks": {
+                "enable": false,
+                "fields": [],
+                "enableWeightRange": false,
+                "filter": {
+                    "sort": [],
+                    "limit": 30,
+                    "logic": "AND",
+                    "filters": [
+                        {
+                            "logic": "AND",
+                            "filters": [
+                                {
+                                    "field": "createDate",
+                                    "operator": "gt",
+                                    "value": "{{getRelativeDate(0,0,-30,\"end\",\"end\",\"end\")}}",
+                                    "type": "datetime"
+                                }
+                            ],
+                            "_field": "createDate",
+                            "_value": {
+                                "differenceType": "days",
+                                "differenceValue": -30
+                            },
+                            "_operator": "gt",
+                            "type": "datetime"
+                        }
+                    ]
+                }
+            }
+        },
+        "showRecommendations": true
+    },
+    "uuid": "modules-b_e_s_cyber_systems-detail"
+}
